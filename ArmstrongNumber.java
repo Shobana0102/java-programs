@@ -3,7 +3,7 @@ public class Main
 {
     static int ArmstrongNumber(int a)
     {
-        int count=0;
+        //int count=0;
         int arm=0;
         String b=String.valueOf(a);
         int c=b.length();
@@ -12,7 +12,7 @@ public class Main
             int n=a%10;
             arm=arm+(int)Math.pow(n,c);
             a=a/10;
-            count++;
+           // count++;
         }
         return arm;
         
@@ -23,7 +23,8 @@ public class Main
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
         int c =ArmstrongNumber(a);
-        System.out.println(c);
+        boolean d=(c==a)?Armstrong number:Not a armstrong number;
+        System.out.println(d);
         
     }
 }// import java.util.*;
