@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+    static int Factorial(int a)
+    {
+        int temp=1;
+        for(int i=a;i>=1;i--)
+        {
+           temp=temp*i;
+        }
+        return(temp);
+    }
+    
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int c =Factorial(a);
+        System.out.println(c);
+        
+    }
+}
